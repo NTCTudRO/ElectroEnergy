@@ -1,0 +1,75 @@
+body{
+    background-image: url("poza.jpg.jpg"); /* imagine de fundal*/
+    background-repeat: no-repeat;/*pune pe ecran o singura imagine, inainte o repeta de 100 de ori*/
+    background-attachment: fixed;/*imaginea - fixata pe ecran*/
+    background-position: center;/*pozitia imaginii de fundal - pe centru*/
+    background-size: cover; /*se seteaza marimea imaginii*/
+    text-align: center; /*aliniaza textul*/
+}
+
+h1{
+    color: white;
+    font-size: 1.2rem;
+}
+
+p{ /*toate paragrafele*/
+    color: white;
+}
+
+button:hover{ /*schimbare culoare la trecerea cu cursorul peste buton*/
+    background-color: black;
+    color: white; 
+}
+
+label{
+    display: flex;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    height: 150%;
+    color: white;
+}
+
+button{ /*toate butoanele*/
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    height: 150%;
+    padding: 10px 24px;
+    border-radius: 8px;
+}
+
+#b1{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-container{ /*buton 2 si buton 3*/
+	display: flex;
+	gap: 980px;
+}
+
+label:hover{ /*schimbare culoare la trecerea cu cursorul peste label*/
+    color: green;
+}
+
+button { /*toate butoanele - umbre*/
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+   
+button:active { /*toate butoanele - umbre*/
+    box-shadow: 0 5px #5f5d5d;
+    transform: translateY(4px);
+}
