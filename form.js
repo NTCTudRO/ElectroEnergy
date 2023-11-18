@@ -23,14 +23,12 @@ const items = [
   const datalist_Range = document.getElementById("Range1");
   const datalist_Range_stby = document.getElementById("Range2");
   const itemInput1 = document.getElementById("electroinput");
-    console.log(itemInput1);
-
   
     function generateOptions(items) {
         items.forEach(item => {
           const option = document.createElement("option");
           option.value = `${item.name}`;
-          option.setAttribute("data-id", item.id); // Set the data-id attribute
+          option.setAttribute("data-id", item.id);
           datalist.appendChild(option);
         });
       }
@@ -46,11 +44,7 @@ function onItemSelect1(item) {
             datalist_Range.removeChild(datalist_Range.lastChild);
           }
       const selectedItemID = selectedOption.getAttribute("data-id"), option = document.createElement("option");
-      console.log("Selected item ID:", selectedItemID);
-      // You can perform actions based on the selected item ID here
-      console.log( items);
       option.value = `${items[selectedItemID-1].range}`;
-      console.log("The range is: ", items[selectedItemID].range);
       datalist_Range.appendChild(option);
     }
   }
@@ -62,24 +56,10 @@ function onItemSelect2(Item){
         datalist_Range_stby.removeChild(datalist_Range_stby.lastChild);
       }
       const selectedItemID = selectedOption.getAttribute("data-id"), option = document.createElement("option");
-      console.log("Selected item ID:", selectedItemID);
-      // You can perform actions based on the selected item ID here
-      console.log( items);
       option.value = `${items[selectedItemID-1].range2}`;
-      console.log("The range is: ", items[selectedItemID].range2);
       datalist_Range_stby.appendChild(option);
     }
 }
 
-  //function showRanges(items){
-    //const option = document.createElement("option");
-    //option.value = `${item.selectedItemID.range}`;
-    //datalist_range.appendChild(option);
-  //}
-  
-  // Listen for the input event on the input field
   itemInput1.addEventListener("input", onItemSelect1);
   itemInput1.addEventListener("input", onItemSelect2);
-
-
-console.log("SCRIPT LOADED")
