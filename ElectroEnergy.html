@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-         <h1 align="center"><font size= 50> REDUCE THE ENERGY CONSUMPTION IN YOUR HOUSE </font></h1><br>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 align="center">
+        <font size=50> REDUCE THE ENERGY CONSUMPTION IN YOUR HOUSE </font>
+    </h1>
 
     <form>
-        <label for="electroinput"> Appliences: </label><br>
-        <input list="Electrocasnice" id="electroinput" name="input1"><br> <!--introducere electrocasnic-->
+        <label for="electroinput"> Appliences: </label>
+        <input list="Electrocasnice" id="electroinput" name="input1">
         <datalist id="Electrocasnice">
+
+        </datalist>
+        <div class="footer">
+            <div class="footer-wrapper">
+             <div class="footer-item">  
+                <label for="input2">Consumption in use (W): </label>
+                <input type="number" list="Range1" id="input2" name="input2">
+                <datalist id="Range1">
+
+                </datalist>
+             </div>
+             <div class="footer-item">
+                <label for="input3">Consumption in standby (W): </label>
+                <input type="number" list="Range2" id="input3" name="input3">
+                <datalist id="Range2">
+
+                </datalist>
+             </div>
+             <div class="footer-item">
+                <label for="input4">Medium usage per day (h): </label>
+                <input type="number" id="input4" name="input4">
+             </div>
            
-        </datalist>
-        <label for="input2"> Appliences consumption while in use (W): </label><br>
-        <input type="number" list="Range1" id="input2" name="input2"><br> <!--introducere consum cat timp in uz-->
-        <datalist id="Range1">
+            </div>
+         </div>
+    </div>
+    <br><br><br><br><br><br>
+    <button type="button" onclick="functie1()" id="b1">Submit</button><br>
+    <div class="footer">
+       <div class="footer-wrapper">
+            <div class="footer-item">  <button type="button" onclick="functie2()" id="b2">Electricity bill</button>  </div>
+            <div class="footer-item">  <button type="button" onclick="functie3()" id="b3">Save money</button>  </div>
+       </div>
+    </div>
 
-        </datalist>
-        <label for="input3"> Appliences consumption while stand-by (W): </label><br>
-        <input type="number" list="Range2" id="input3" name="input3"><br> <!--introducere consum cat timp in standby-->
-        <datalist id="Range2">
-            
-        </datalist>
-        <label for="input4"> Medium usage time per day (h): </label><br>
-        <input type="number" id="input4" name="input4"><br><br> <!--introducere timp in uz pe zi-->
-		<button type="button" onclick="functie1()" id="b1">Submit</button><br><br><br> <!-- buton introducere in program a electrocasnicului cu detalii-->
-		<div class="button-container">
-			<button type="button" onclick="functie2()" id="b2">Show</button> <!--buton afisare datele introduse-->
-			<button type="button" onclick="functie3()" id="b3">Calculate </button><br><br> <!--buton calculare consum total pe zi-->
-		</div>
-			
-    <p style="color: white" align="center"><font size= 5><b>Appliances - Consumption (use) - Consumption (stby) - Usage</b></font></p> <!--capul de "tabel"-->
-	
-    <p1 id="demo1" style="color: white"><font size= 20></font></p1><br><br> <!--afisare detaliile introduse-->
+        <p1 id="demo1" style="color: white">
+            <font size=20></font>
+        </p1><br><br>
 
-    <p2 id="demo2" style="color: white"></p2> <!--afisare consum total pe zi-->
-    <script src="code.js"></script>
-    <script src="form.js"></script>
-    </body>
+        <p2 id="demo2" style="color: white"></p2>
+        <script src="code.js"></script>
+        <script src="form.js"></script>
+</body>
+
 </html>
