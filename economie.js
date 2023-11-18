@@ -1,4 +1,4 @@
-let energyDecoded, kWh=0.5, suma=0;
+let energyDecoded, kWh=0.8, suma=0;
 function decodeParamsAndShow() {
     const urlParams = new URLSearchParams(window.location.search);
     const usageEncoded = urlParams.get("usage")
