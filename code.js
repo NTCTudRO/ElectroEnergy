@@ -1,5 +1,5 @@
 var Electrocasnic=[], ConsumElectrocasnic=[], ConsumElectrocasnic_stby=[], Folosire=[]
-        var Consum_total=0, Consum_total_stby=0, kWh=0.5, aux=0, c;
+        var Consum_total=0, Consum_total_stby=0, kWh=0.8, aux=0, c;
         function functie1(){ 
             var aux1=document.getElementById("electroinput").value;
             var aux2=document.getElementById("input2").value;
