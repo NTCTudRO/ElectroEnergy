@@ -21,7 +21,7 @@ function functie_economie(){
         document.getElementById("demo_1").appendChild(div)
     });
     suma=suma/1000;
-    let roundedSuma=parseFloat(suma).toFixed(2);
-    document.getElementById("demo_2").innerHTML="Total standby consumption per month is: " + roundedSuma*30 + " kW";
-    document.getElementById("demo_3").innerHTML="How much money you can save per month is: " + roundedSuma*30*kWh + " lei";
+    let roundedSuma1=parseFloat(suma*30).toFixed(2), roundedSuma2=parseFloat(suma*30*kWh).toFixed(2);
+    document.getElementById("demo_2").innerHTML="Total standby consumption per month is: " + roundedSuma1 + " kW";
+    document.getElementById("demo_3").innerHTML="How much money you can save per month is: " + roundedSuma2 + " lei";
 }
