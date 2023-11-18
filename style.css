@@ -1,22 +1,32 @@
 body{
-    background-image: url("poza.jpg.jpg"); /* imagine de fundal*/
-    background-repeat: no-repeat;/*pune pe ecran o singura imagine, inainte o repeta de 100 de ori*/
-    background-attachment: fixed;/*imaginea - fixata pe ecran*/
-    background-position: center;/*pozitia imaginii de fundal - pe centru*/
-    background-size: cover; /*se seteaza marimea imaginii*/
-    text-align: center; /*aliniaza textul*/
+    background-image: url("poza.jpg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
 }
 
 h1{
     color: white;
     font-size: 1.2rem;
+} 
+
+h2{
+    color: rgb(98, 183, 8);
+    font-size: 1.7rem;
+} 
+
+h3{
+    color: rgb(98, 183, 8);
+    font-size: 1.7rem;
 }
 
-p{ /*toate paragrafele*/
+p{
     color: white;
 }
 
-button:hover{ /*schimbare culoare la trecerea cu cursorul peste buton*/
+button:hover{ 
     background-color: black;
     color: white; 
 }
@@ -31,7 +41,7 @@ label{
     color: white;
 }
 
-button{ /*toate butoanele*/
+button{ 
     display: flex;
     font-size: 1.5rem;
     font-weight: bolder;
@@ -47,16 +57,11 @@ button{ /*toate butoanele*/
     margin-right: auto;
 }
 
-.button-container{ /*buton 2 si buton 3*/
-	display: flex;
-	gap: 980px;
-}
-
-label:hover{ /*schimbare culoare la trecerea cu cursorul peste label*/
+label:hover{ 
     color: green;
 }
 
-button { /*toate butoanele - umbre*/
+button { 
     display: inline-block;
     padding: 15px 25px;
     font-size: 24px;
@@ -69,7 +74,26 @@ button { /*toate butoanele - umbre*/
     box-shadow: 0 9px #999;
 }
    
-button:active { /*toate butoanele - umbre*/
+button:active {
     box-shadow: 0 5px #5f5d5d;
     transform: translateY(4px);
+}
+
+.page {
+    flex-direction: column;
+}
+
+.main {
+    flex:2;
+}
+
+.footer{
+    flex:1;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
 }
